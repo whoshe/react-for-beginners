@@ -24,12 +24,13 @@ function Detail() {
         <h1>Loading...</h1>
       ) : (
         <div>
-        <Link to="/"> {`<홈으로 가기`}</Link>
+        <Link to={process.env.PUBLIC_URL}> {`<홈으로 가기`}</Link>
           <Movie
             key={movie.id}
             id={movie.id}
             coverImg={movie.medium_cover_image}
             title={movie.title}
+            year={movie.year}
             summary={movie.description_full}
             genres={movie.genres}
           />
