@@ -10,9 +10,6 @@ function Movie({ id, coverImg, title, year, summary, genres }) {
           <Link to={`/movie/${id}`}>{title}</Link>
         </h2>
         <h3 className={styles.movieYear}>{year}</h3>
-      </div>
-      <div></div>
-      <div>
         <p className={styles.movieSummary}>
           {summary.length > 120 ? `${summary.slice(0, 120)}...` : summary}
         </p>
